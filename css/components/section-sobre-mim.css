@@ -6,12 +6,13 @@
 #section-sobre-mim {
     position: relative;
     height: 100vh;
-    width: 99vw;
+    width: auto;
     margin-top: 49%;
     /* A posição da seção é definida abaixo da primeira seção */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
     background-image: url("../../utils/neon-lights-dark-5824x3264-12563\ \(3\).jpg");
     background-size: cover;
     background-position: center center;
@@ -89,8 +90,8 @@
 
 .icons-tech {
     position: relative;
-    top: 75%;
-    right: 25.5%;
+    top: 50%;
+    right: 44%;
     width: 40vw; 
     height: 20vh;
     display: flex;

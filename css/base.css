@@ -14,12 +14,10 @@
 * {
 }
 
-body {
- 
-}
+
 
 main {
-  width: 90vw;
+  width: 100vw;
   margin: 0 auto;
   text-decoration: none;
 }

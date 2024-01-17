@@ -1,0 +1,15 @@
+#section-projetos {
+    position: relative;
+    min-height: 100vh;
+    height: 100vh;
+    width: 99vw;
+    right: 0.34%;
+    /* A posição da seção é definida abaixo da primeira seção */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("../../utils/neon-lights-dark-5824x3264-12563\ \(2\).jpg");
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}

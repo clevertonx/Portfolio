@@ -55,7 +55,6 @@
     left: 5%;
     top: 35%;
     justify-content: flex-start;
-    align-items: center;
     z-index: -1;
     opacity: 0.9;
     min-width: 50%;
@@ -86,4 +85,53 @@
     height: 530px;
     width: 420px;
     object-fit: cover;
+}
+
+.icons-tech {
+    position: relative;
+    top: 75%;
+    right: 25.5%;
+    width: 40vw; 
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+.icondiv {
+    position: relative;
+    width: 100px; 
+    height: 100px; 
+}
+
+.icons-tech, .icondiv:hover  {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.circles, .icons {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.icons {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 50%; 
+    height: 50%; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circles {
+    animation: spin 3s linear infinite; 
 }

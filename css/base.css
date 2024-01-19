@@ -1,4 +1,3 @@
-
 @import url(reset.css);
 @import url(responsivo.css);
 @import url(components/cabecalho.css);
@@ -6,12 +5,14 @@
 @import url(components/section-sobre-mim.css);
 @import url(components/titulo-section.css);
 @import url(components/section-projetos.css);
+@import url(components/footer.css);
 
 :root {
 
 }
 
 * {
+  margin: 0 auto;
 }
 
 

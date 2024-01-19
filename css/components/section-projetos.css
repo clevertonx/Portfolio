@@ -44,8 +44,8 @@
     height: 350px;
     overflow: hidden;
     border-radius: 5%;
-    border: solid;
-    border-color: #D017B8;
+    border: solid 1px;
+    border-color: white;
   }
   
   .project-thumb {

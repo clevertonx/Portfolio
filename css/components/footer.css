@@ -1,107 +1,123 @@
 @font-face {
-    font-family: 'vt323';
-    src: url('../../fonts/VT323-Regular.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'glitchgoblin';
     src: url('../../fonts/GlitchGoblin-2O87v.ttf') format('truetype');
 }
 
-footer {
-    width: 100%;
-    height: 36vh;
-    background: linear-gradient(to bottom, #04131A, #000000);
-    color: white;
-}
-
-#footer_content {
-    width: 38vw;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "contacts contacts contacts links";
-}
-
-#footer_contacts {
+@font-face {
     font-family: 'vt323';
-    font-size: 24px;
-    padding: 3rem 3.5rem;
-    grid-area: contacts;
+    src: url('../../fonts/VT323-Regular.ttf') format('truetype');
 }
 
-#footer_contacts h4{
+.main_footer {
+    background: linear-gradient(to bottom, #04131A, #000000);
+    color: #ffffff;
+    font-size: 0.875em;
+}
+
+.main_footer .content {
+    float: left;
+    width: 90%;
+    margin: 0 5%;
+    padding: 5em 0;
+}
+
+.container {
+    float: left;
+    width: 100%;
+}
+
+.colfooter {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 2em;
+}
+
+.colfooter .titleFooter {
     font-family: 'glitchgoblin';
-    font-size: 24px;
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: #761D5F;
-    font-weight: bold;
-    padding-bottom: 2rem;
+    letter-spacing: 0.1em;
+    font-size: 1.5em;
+    color: #ffffff;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px #4ec0db solid;
 }
 
-
-#footer_links {
-    width: 35vw;
-    grid-area: links;
-    display: flex;
-    flex-direction: column; 
-    gap: 1rem;
-    margin-left: auto;
+.colfooter p {
+    font-family: 'vt323';
+    color: #ffffff;
+    font-size: 1.3em;
+    height: 25px;
 }
 
-#footer_links h4 {
-    font-family: 'glitchgoblin';
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: #761D5F;
-    grid-area: contacts;
-    color: white;
-    margin-left: auto;
-    margin-right: 21rem;
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 1rem;
-    font-size: 34px;
+.botao {
+    padding: 10px 12px;
+    font-family: 'open_sansregular';
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 7px;
+
 }
 
-#footer_links ul {
-    margin-left: auto;
-    display: flex;
-    flex-direction: row;
-    margin-right: 15rem;
-}
-
-#footer_links li {
-    margin-left: 1rem; 
-}
-
-#footer_links a:hover img {
+.botao:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
 }
 
-#footer_copyright {
-    display: flex;
-    justify-content: center;
-    align-items:flex-end;
+.main_footer_copy {
+    background: linear-gradient(to bottom, #04131A, #04131A);
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 1.5em 0em;
 }
 
-@media screen and (max-width: 768px) {
-    #footer_content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        grid-template-areas:
-            "contacts contacts"
-            "links links";
-    }
-    #footer_links {
-        justify-content: center;
-    }
+.main_footer_copy p {
+    font-family: 'vt323';
+    font-size: 1.2em;
+    color: #e1e0e0;
+    height: 20px;
 }
 
-@media screen and (max-width: 426px) {
-    #footer_content {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 2rem;
-        grid-template-areas:
-            "contacts"
-            "links";
+.main_footer_copy .m-b-footer {
+    margin-bottom: 0.5em;
+}
+
+.main_footer_copy .by {
+    font-size: 1em;
+}
+
+.main_footer_copy .by a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main_footer_copy .by a:hover {
+    text-decoration: underline;
+}
+
+.main_footer_copy .by i {
+    font-size: 0.96em;
+    margin-right: 3px;
+    color: #e82626;
+}
+
+/*Responsivo*/
+/*768PX BREAKPOINT*/
+@media (min-width:48em) {
+    .colfooter {
+        width: 30%;
+        margin-right: 5%;
+        margin-bottom: 0;
+    }
+
+    .colfooter:nth-of-type(3n+0) {
+        margin-right: 0;
+        border-right: 0;
     }
 }

@@ -2,7 +2,7 @@ const textoParaDigitar = document.getElementById('texto-digitar').innerText;
 const elementoParaDigitar = document.getElementById('texto-digitar');
 elementoParaDigitar.innerHTML = '';
 
-const quantidadesPorLinha = [54, 50, 58, 45, 56, 57, 58, 42];
+const quantidadesPorLinha = [65, 65, 65, 61, 56, 54, 51, 64, 45];
 let linhaAtual = 0;
 
 function digitar() {
@@ -29,7 +29,7 @@ function digitar() {
         if (i >= textoParaDigitar.length) {
             clearInterval(intervalo);
         }
-    }, 50); 
+    }, 70); 
 }
 
 digitar();

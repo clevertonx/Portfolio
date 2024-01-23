@@ -19,6 +19,13 @@
     z-index: 1;
 }
 
+.texto-e-icons{
+    display: flex;
+    flex-direction: column; /* Alterado para column para empilhar elementos verticalmente */
+    align-items: center; /* Adicionado para centralizar os elementos verticalmente */
+    text-align: center;
+}
+
 .texto-e-icons .texto-sobre {
     font-family: 'vt323';
     paint-order: stroke fill;
@@ -30,7 +37,7 @@
     max-width: 47%;
     color: white;
     z-index: 2;
-    font-size: 38px;
+    font-size: 2rem;
     margin: 1rem;
     text-align: justify;
 }
@@ -89,13 +96,14 @@
 }
 
 .icons-tech {
-    position: relative;
-    top: 50%;
-    right: 44%;
-    width: 40vw; 
+    width: 40vw;
     height: 20vh;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    margin-top: 60%;
+    margin-right: 100%;
 }
 
 .icondiv {

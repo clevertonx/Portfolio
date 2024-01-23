@@ -1,7 +1,7 @@
 const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
-    duration: 1500,
+    duration: 1300,
     reset: false,
    })
 

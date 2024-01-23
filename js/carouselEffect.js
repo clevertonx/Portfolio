@@ -3,30 +3,27 @@ const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
 const preBtn = [...document.querySelectorAll('.pre-btn')];
 
 projectContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
-
     let intervalId;
+    let cardWidth = item.querySelector('.project-card').offsetWidth; 
 
-    // Função para avançar o carrossel
     const nextSlide = () => {
-        if (item.scrollLeft + containerWidth >= item.scrollWidth) {
-            // Verifica se chegou ao final
-            item.scrollLeft = 0; // Volta ao início
+        if (item.scrollLeft + item.clientWidth >= item.scrollWidth) {
+
+            item.scrollLeft = 0; 
         } else {
-            item.scrollLeft += containerWidth;
+            item.scrollLeft += cardWidth;
         }
     };
 
-    // Função para retroceder o carrossel
+
     const prevSlide = () => {
-        item.scrollLeft -= containerWidth;
+        item.scrollLeft -= cardWidth;
     };
 
-    // Adiciona listeners aos botões
+
     nxtBtn[i].addEventListener('click', () => {
         nextSlide();
-        clearInterval(intervalId); // Limpa o intervalo para evitar conflitos
+        clearInterval(intervalId); 
     });
 
     preBtn[i].addEventListener('click', () => {
@@ -34,22 +31,20 @@ projectContainers.forEach((item, i) => {
         clearInterval(intervalId);
     });
 
-    // Adiciona rotação automática
+
     const startAutoScroll = () => {
         intervalId = setInterval(() => {
             nextSlide();
-        }, 2000); // Ajuste o intervalo de tempo conforme necessário (aqui, é 5000 milissegundos ou 5 segundos)
+        }, 2000); 
     };
 
-    // Inicia rotação automática quando a página carrega
     startAutoScroll();
 
-    // Pausa a rotação automática quando o mouse está sobre o carrossel
     item.addEventListener('mouseenter', () => {
         clearInterval(intervalId);
     });
 
-    // Reinicia a rotação automática quando o mouse sai do carrossel
+
     item.addEventListener('mouseleave', () => {
         startAutoScroll();
     });

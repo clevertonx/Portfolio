@@ -2,7 +2,7 @@ const textoParaDigitar = document.getElementById('texto-digitar').innerText;
 const elementoParaDigitar = document.getElementById('texto-digitar');
 elementoParaDigitar.innerHTML = '';
 
-const quantidadesPorLinha = [65, 65, 65, 61, 56, 54, 51, 64, 45];
+const quantidadesPorLinha = [65, 65, 65, 61, 56, 54, 51, 65, 45];
 let linhaAtual = 0;
 
 function digitar() {

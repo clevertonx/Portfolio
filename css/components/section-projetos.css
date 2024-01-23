@@ -33,8 +33,8 @@
   
   .project-card {
     flex: 0 0 auto;
-    width: 500px;
-    height: 450px;
+    width: 400px;
+    height: 300px;
     margin-right: 40px;
   }
   
@@ -116,7 +116,7 @@
     width: 5vw;
     height: 5vh;
     position: absolute;
-    top: 50%;
+    top: 60%;
     display: flex;
     justify-content: center;
     align-items: center;

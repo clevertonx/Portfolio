@@ -12,13 +12,14 @@
     position: relative;
     min-height: calc(100vh - 80px);
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #section-home {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background-image: url("../../utils/circuit-lines-upscaled\ \(1\).png");
@@ -39,7 +40,7 @@
 
 .conteudo-home h1 {
     font-family: 'glitchgoblin';
-    font-size: 35px;
+    font-size: 2rem;
     margin-bottom: 2rem;
     paint-order: stroke fill;
     -webkit-text-stroke-width: 0.1px;
@@ -49,7 +50,7 @@
 
 .conteudo-home h2 {
     font-family: 'glitchgoblin';
-    font-size: 50px;
+    font-size: 3rem;
     paint-order: stroke fill;
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: #761D5F;
@@ -57,7 +58,7 @@
 
 .conteudo-home p {
     font-family: 'vt323';
-    font-size: 50px;
+    font-size: 3rem;
     margin-top: 7rem;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #761D5F;
@@ -67,13 +68,111 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1rem;
     position: absolute;
-    right: 60px;
+    right: 3%;
     top: 30%;
 }
 
 .icons-contato a:hover img {
     transform: scale(1.2);
     transition: transform 0.3s ease;
+}
+
+@media only screen and (max-width: 1100px) {
+    #section-home {
+        height: auto;
+        /* Ajuste da altura mínima em telas menores */
+    }
+
+    .conteudo-home {
+        margin: 10% 5%;
+    }
+
+    .conteudo-home h1 {
+        font-family: 'glitchgoblin';
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        paint-order: stroke fill;
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: #761D5F;
+        font-weight: bold;
+    }
+
+    .conteudo-home h2 {
+        font-family: 'glitchgoblin';
+        font-size: 2rem;
+        paint-order: stroke fill;
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: #761D5F;
+    }
+
+
+    .conteudo-home p {
+        font-family: 'vt323';
+        font-size: 2.2rem;
+        margin-top: 2rem;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #761D5F;
+    }
+
+    .icons-contato ul {
+        right: 5%;
+        /* Ajuste da posição dos ícones em telas menores */
+        top: 10%;
+        /* Ajuste da posição dos ícones em telas menores */
+    }
+
+    .icons-contato ul li img {
+        width: 80%;
+        height: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 660px) {
+
+    .conteudo-home {
+        margin: 10% 5% 0%;
+    }
+
+    .conteudo-home h1 {
+        font-family: 'glitchgoblin';
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        paint-order: stroke fill;
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: #761D5F;
+        font-weight: bold;
+    }
+
+    .conteudo-home h2 {
+        font-family: 'glitchgoblin';
+        font-size: 1.5rem;
+        paint-order: stroke fill;
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: #761D5F;
+    }
+
+    .conteudo-home p {
+        font-family: 'vt323';
+        font-size: 2rem;
+        margin-top: 2rem;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #761D5F;
+    }
+
+    .icons-contato ul {
+        width: 40%;
+        right: 30%;
+        top: 50%;
+        flex-direction: row;
+    }
+
+    .icons-contato ul li img {
+        width: 100%;
+        height: 100%;
+    }
 }

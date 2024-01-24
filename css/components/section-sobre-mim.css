@@ -6,7 +6,7 @@
 #section-sobre-mim {
     position: relative;
     height: 100vh;
-    width: auto;
+    width: 100%;
     margin-top: 49%;
     /* A posição da seção é definida abaixo da primeira seção */
     display: flex;
@@ -143,4 +143,11 @@
 
 .circles {
     animation: spin 3s linear infinite; 
+}
+
+@media only screen and (max-width: 1100px) {
+
+    #section-sobre-mim {
+        margin-top: 100%;
+    }
 }

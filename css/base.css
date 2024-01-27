@@ -4,6 +4,7 @@
 @import url(components/section-home.css);
 @import url(components/section-sobre-mim.css);
 @import url(components/titulo-section.css);
+@import url(components/section-tecnologias.css);
 @import url(components/section-projetos.css);
 @import url(components/footer.css);
 @import url(components/scroll-reveal.css);
@@ -13,15 +14,93 @@
 }
 
 * {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
+html {
+  font-size: 62.5%;
+}
 
+body {
+  font-size: 1.6rem;
+  margin-top: 15rem;
+}
 
-main {
-  width: 100vw;
+h1 {
+  font-size: 6.4rem;
+  font-weight: 700;
+}
+
+p,
+.p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+p:not(:last-of-type),
+.p:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.max-width {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 4rem;
   margin: 0 auto;
-  text-decoration: none;
+  margin-bottom: 26rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-s {
+  margin-bottom: 1rem;
+}
+
+.mb-m {
+  margin-bottom: 2rem;
+}
+
+.mb-l {
+  margin-bottom: 4rem;
+}
+
+.mb-xl {
+  margin-bottom: 6rem;
+}
+
+#background-container{
+  background-image: url("../utils/neon-lights-dark-5824x3264-12563.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 60%;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 58%;
+  }
+
+  .max-width {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 4.2rem;
+  }
 }
 
 @font-face {

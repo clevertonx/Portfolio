@@ -10,7 +10,7 @@
 
 #section-home {
     position: relative;
-    min-height: calc(100vh - 80px);
+    min-height: calc(120vh - 80px);
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -81,7 +81,7 @@
 
 @media only screen and (max-width: 1100px) {
     #section-home {
-        height: auto;
+        height: 140vh;
         /* Ajuste da altura mínima em telas menores */
     }
 
@@ -167,7 +167,7 @@
     .icons-contato ul {
         width: 40%;
         right: 30%;
-        top: 50%;
+        top: 27%;
         flex-direction: row;
     }
 

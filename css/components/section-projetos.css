@@ -6,10 +6,22 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    background-image: url("../../utils/neon-lights-dark-5824x3264-12563_2.jpg");
-    background-size: cover;
-    background-position: center center;
     z-index: 1;
+}
+
+#section-projetos .quarto-titulo {
+  font-family: 'glitchgoblin';
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #761D5F;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 2.5vw;
 }
 
 .product-category {
@@ -179,3 +191,25 @@
     grid-column: span 2;
     margin-bottom: 10px;
   }
+
+  @media only screen and (max-width: 1410px) {
+    .project-card {
+      flex: 0 0 auto;
+      width: 350px;
+      height: 250px;
+      margin-right: 40px;
+    }
+
+    #section-projetos .quarto-titulo {
+      margin-top: 15rem;
+      font-size: 1.9rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    #section-projetos .quarto-titulo {
+      margin-top: 3rem;
+      font-size: 1.9rem;
+    }
+  }
+

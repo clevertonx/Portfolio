@@ -31,6 +31,7 @@
     height: auto;
     float: left;
     margin-bottom: 2em;
+    line-height: 1.5rem;
 }
 
 .colfooter .titleFooter {
@@ -49,7 +50,8 @@
     font-family: 'vt323';
     color: #ffffff;
     font-size: 1.3em;
-    height: 25px;
+    height: 2rem;
+    line-height: 1.5rem;
 }
 
 .botao {
@@ -120,4 +122,5 @@
         margin-right: 0;
         border-right: 0;
     }
+    
 }

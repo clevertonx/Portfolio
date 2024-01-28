@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'vt323';
+  src: url('../../fonts/VT323-Regular.ttf') format('truetype');
+}
+
+.skills {
+  z-index: 1;
+  scroll-margin-top: 15rem;
+  height: 100vh;
+}
+
+.skills .skills__content {
+  padding: 6rem 4rem;
+  text-align: center;
+}
+
+.skills .skills__content .tertiary-title {
+  font-family: 'glitchgoblin';
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #761D5F;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 2.5vw;
+}
+
+.skills .skills__content .description {
+  max-width: 56rem;
+  margin: 0 auto 6rem;
+  font-family: 'vt323';
+  paint-order: stroke fill;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #761D5F;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.skills .skills__content .description-tech {
+  font-family: 'vt323';
+  paint-order: stroke fill;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #761D5F;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #04131A;
+  border: solid;
+  border-width: 1px;
+  border-color: #D017B8;
+  border-radius: 15px;
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+.skills .skills__content ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.skills .skills__content ul li .image-container {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 50%;
+  width: 5rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.skills .skills__content ul li h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 1rem;
+  font-family: 'vt323';
+  paint-order: stroke fill;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #761D5F;
+  color: white;
+}
+
+@media only screen and (max-width: 1840px) {
+
+  .skills {
+    height: 130vh;
+  }
+
+  .skills .skills__content .tertiary-title {
+    font-size: 1.9rem;
+  }
+
+  @media only screen and (max-width: 980px) {
+
+    .skills {
+      height: 220vh;
+    }
+
+    .skills .skills__content .tertiary-title {
+      font-size: 1.9rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .skills {
+      height: 240vh;
+    }
+
+    .skills .skills__content .tertiary-title {
+      font-size: 1.9rem;
+    }
+  }
+}

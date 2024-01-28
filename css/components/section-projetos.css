@@ -87,6 +87,8 @@
   cursor: pointer;
   opacity: 0;
   font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 .project-card:hover .card-btn {

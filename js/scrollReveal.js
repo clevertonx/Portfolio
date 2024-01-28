@@ -6,7 +6,7 @@ const scrollReveal = ScrollReveal({
    })
 
    scrollReveal.reveal(
-    '.conteudo-home, .icons-contato ul,.gif,.icons-tech, .gif-img, .pre-btn, .nxt-btn, .project-container,  .colfooter, .main_footer_copy ',
+    '.conteudo-home, .icons-contato ul, .header__left, .header__right, .header__image, .cleverton, .skills__content, .pre-btn, .nxt-btn, .project-container,  .colfooter, .main_footer_copy ',
     {
    interval: 300,
     },

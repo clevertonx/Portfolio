@@ -133,13 +133,14 @@
 
 @media only screen and (max-width: 660px) {
 
+
     .conteudo-home {
         margin: 10% 5% 0%;
     }
 
     .conteudo-home h1 {
         font-family: 'glitchgoblin';
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 1rem;
         margin-top: 3rem;
         paint-order: stroke fill;
@@ -150,7 +151,7 @@
 
     .conteudo-home h2 {
         font-family: 'glitchgoblin';
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         paint-order: stroke fill;
         -webkit-text-stroke-width: 0.1px;
         -webkit-text-stroke-color: #761D5F;
@@ -158,10 +159,11 @@
 
     .conteudo-home p {
         font-family: 'vt323';
-        font-size: 2rem;
-        margin-top: 2rem;
-        -webkit-text-stroke-width: 1.5px;
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+        -webkit-text-stroke-width: 0.6px;
         -webkit-text-stroke-color: #761D5F;
+        line-height: 1.2rem;
     }
 
     .icons-contato ul {

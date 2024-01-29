@@ -41,6 +41,7 @@
     margin-bottom: 4rem;
     padding: 1rem;
     max-width: 60rem;
+    max-height: 60rem;
     font-family: 'vt323';
     paint-order: stroke fill;
     -webkit-text-stroke-width: 0.8px;
@@ -107,6 +108,7 @@
         text-align: center;
         height: 130vh;
     }
+   
 
 
 }
@@ -117,11 +119,12 @@
         flex-direction: column-reverse;
         text-align: center;
         margin-top: 80%;
-        height: 160vh;
+        height: 190vh;
     }
 
     #section-sobre-mim .header__left p {
         margin: 1rem auto 0rem;
+        font-size: 1.3rem;
     }
 
     #section-sobre-mim .header__right .header__image {
@@ -130,9 +133,10 @@
 
     
     #section-sobre-mim .header__right .header__image .cleverton {
-        border-radius: 5rem;
-        min-width: 15rem;
+        border-radius: 3.5rem;
+        min-width: 6rem;
         max-width: 50%;
         background-color: #04131A;
     }
+
 }

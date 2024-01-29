@@ -63,7 +63,6 @@
 }
 
 .skills .skills__content ul li .image-container {
-  background-color: var(--white);
   padding: 2rem;
   border-radius: 50%;
   width: 5rem;
@@ -85,6 +84,8 @@
   -webkit-text-stroke-color: #761D5F;
   color: white;
 }
+
+
 
 @media only screen and (max-width: 1840px) {
 
@@ -111,10 +112,15 @@
 
     .skills {
       height: 240vh;
+
     }
 
     .skills .skills__content .tertiary-title {
       font-size: 1.9rem;
+    }
+
+    .skills .skills__content ul .skills__item{
+      width: 16rem;
     }
   }
 }

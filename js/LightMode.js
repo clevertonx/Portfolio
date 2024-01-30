@@ -153,7 +153,7 @@ document.getElementById('removeCheckbox').addEventListener('change', function() 
 
         backgroundContainer.style.backgroundImage = 'url("../utils/neon-lights-dark-5824x3264-12563.jpg")';
         backgroundContainer.style.background = '';
-        sectionHome.style.backgroundImage = 'url("../../utils/circuit-lines-upscaled (1).png")';
+        sectionHome.style.backgroundImage = 'url("../../utils/circuit-lines-upscaled\ \(1\).png")';
         sectionHome.style.backgroundColor = '';
         h1Element.style.fontFamily = '';
         h1Element.style.color = '';

@@ -153,7 +153,7 @@ document.getElementById('removeCheckbox').addEventListener('change', function ()
 
         backgroundContainer.style.backgroundImage = 'url("../utils/neon-lights-dark-5824x3264-12563.jpg")';
         backgroundContainer.style.background = '';
-        sectionHome.style.backgroundImage = 'url("../../utils/circuitLines.png")';
+        sectionHome.style.backgroundImage = 'url("../utils/circuitLines.png")';
         console.log('Checkbox estado:', this.checked);
         console.log('Caminho da imagem:', sectionHome.style.backgroundImage);
         sectionHome.style.backgroundColor = '';

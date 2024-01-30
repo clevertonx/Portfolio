@@ -9,9 +9,7 @@
 @import url(components/footer.css);
 @import url(components/scroll-reveal.css);
 
-:root {
-
-}
+:root {}
 
 * {
   margin: 0;
@@ -74,10 +72,18 @@ p:not(:last-of-type),
   margin-bottom: 6rem;
 }
 
-#background-container{
+#background-container {
   background-image: url("../utils/neon-lights-dark-5824x3264-12563.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.dark-mode #background-container {
+  background-image: none;
+}
+
+.dark-mode #section-home {
+  background-image: none;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -104,6 +110,6 @@ p:not(:last-of-type),
 }
 
 @font-face {
-    font-family: 'glitchgoblin';
-    src: url('fonts/GlitchGoblin-2O87v.ttf') format('truetype');
+  font-family: 'glitchgoblin';
+  src: url('fonts/GlitchGoblin-2O87v.ttf') format('truetype');
 }

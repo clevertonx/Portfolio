@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="https://kit.fontawesome.com/6a57f84893.js" crossorigin="anonymous"></script>
     <script src="./js/scrollReveal.js" defer></script>
     <script src="./js/smoothScroll.js" defer></script>
     <script src="./js/carouselEffect.js" defer></script>
+    <script src="./js/LightMode.js" defer></script>
 
 
     <title>Portfolio Tom</title>
@@ -28,14 +30,23 @@
             <li><a href="#section-sobre-mim" title="Sobre">Sobre Mim</a></li>
             <li><a href="#section-projetos" title="Projetos">Projetos</a></li>
             <li><a href="#rodape-contato" title="Contato">Contato</a></li>
+           
+            
 
         </ul>
+        <input type="checkbox" class="checkbox" id="removeCheckbox">
+
+        <label class="label" for="removeCheckbox">
+            <i class="fa-regular fa-sun"></i>
+            <i class="fa-regular fa-moon"></i>
+            <div class="ball"></div>
+        </label>
 
     </div>
 </header>
 
 <body>
-    <section id="section-home">
+    <section id="section-home"  class="dark-mode">
         <div class="conteudo-home">
             <h1>Back-End Developer
             </h1>
@@ -55,7 +66,7 @@
             </ul>
         </nav>
     </section>
-    <div id="background-container">
+    <div id="background-container"  class="dark-mode">
         <section id="section-sobre-mim" class="max-width">
             <div class="header__left">
                 <h1>Sobre Mim</h1>
@@ -243,8 +254,8 @@
             <div class="colfooter">
 
                 <h3 class="titleFooter"> Contato</h3>
-                <p><i class="icon icon-mail"></i> clevertonx@gmail.com</p>
-                <p><i class="icon icon-phone"></i> (67) 99133-3993</p>
+                <p> clevertonx@gmail.com</p>
+                <p> (67) 99133-3993</p>
             </div>
             <div class="colfooter">
 
@@ -265,7 +276,7 @@
         <div class="main_footer_copy">
 
             <p class="m-b-footer"> PortfolioTom - 2024, todos os direitos reservados.</p>
-            <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: <a href="#" title="Seu nome">Cleverton de
+            <p class="by"> Desenvolvido por: <a href="#" title="Seu nome">Cleverton de
                     Carvalho Xavier</a></p>
 
         </div>

@@ -27,6 +27,7 @@
     background-position: center;
     background-attachment: fixed;
     z-index: -1;
+    transition: background-image 1s ease;
 }
 
 .conteudo-home {
@@ -169,7 +170,7 @@
     .icons-contato ul {
         width: 40%;
         right: 30%;
-        top: 20%;
+        top: 25%;
         flex-direction: row;
     }
 

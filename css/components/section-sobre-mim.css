@@ -124,7 +124,8 @@
 
     #section-sobre-mim .header__left p {
         margin: 1rem auto 0rem;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        -webkit-text-stroke-width: 0.3px;
     }
 
     #section-sobre-mim .header__right .header__image {

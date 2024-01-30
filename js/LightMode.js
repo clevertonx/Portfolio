@@ -1,4 +1,4 @@
-document.getElementById('removeCheckbox').addEventListener('change', function() {
+document.getElementById('removeCheckbox').addEventListener('change', function () {
     var backgroundContainer = document.getElementById('background-container');
     var sectionHome = document.getElementById('section-home');
     var h1Element = document.querySelector('.conteudo-home h1');
@@ -28,7 +28,7 @@ document.getElementById('removeCheckbox').addEventListener('change', function() 
     var mainFooterCopy = document.querySelector('.main_footer_copy');
     var anchorTags = document.querySelectorAll('.main_footer_copy a');
 
-    
+
 
     if (this.checked) {
         backgroundContainer.style.backgroundImage = 'none';
@@ -45,27 +45,27 @@ document.getElementById('removeCheckbox').addEventListener('change', function() 
         pElement.style.color = 'black';
         pElement.style.webkitTextStrokeColor = 'transparent';
         pElement.style.fontSize = '1.2rem';
-        
+
 
         header.style.backgroundColor = '#d9d9d9';
         navUl.style.backgroundColor = '#d9d9d9';
 
-        navItems.forEach(function(item) {
-            item.style.color = 'black'; 
-            item.style.fontFamily = 'sans-serif'; 
+        navItems.forEach(function (item) {
+            item.style.color = 'black';
+            item.style.fontFamily = 'sans-serif';
         });
-        icons.forEach(function(icon) {
-            icon.style.filter = 'brightness(0%)'; 
+        icons.forEach(function (icon) {
+            icon.style.filter = 'brightness(0%)';
         });
 
-        sobreMimTitle.style.fontFamily = 'sans-serif'; 
+        sobreMimTitle.style.fontFamily = 'sans-serif';
         sobreMimTitle.style.color = '#3c415c';
         sobreMimTitle.style.webkitTextStrokeColor = 'transparent';
 
-        sobreMimContent.style.fontFamily = 'Arial, sans-serif'; 
-        sobreMimContent.style.color = 'black'; 
-        sobreMimContent.style.backgroundColor = 'white'; 
-        sobreMimContent.style.border = '5px solid #3c415c'; 
+        sobreMimContent.style.fontFamily = 'Arial, sans-serif';
+        sobreMimContent.style.color = 'black';
+        sobreMimContent.style.backgroundColor = 'white';
+        sobreMimContent.style.border = '5px solid #3c415c';
         sobreMimContent.style.webkitTextStrokeColor = 'transparent';
         sobreMimContent.style.fontSize = '1rem';
 
@@ -73,27 +73,27 @@ document.getElementById('removeCheckbox').addEventListener('change', function() 
 
         skillsSection.style.backgroundColor = '#f3f6fb';
         if (window.innerWidth <= 768) {
-            skillsSection.style.height = '350vh'; 
+            skillsSection.style.height = '350vh';
         } else {
-            skillsSection.style.height = ''; 
+            skillsSection.style.height = '';
         }
 
-        skillsH2.style.fontFamily = 'sans-serif'; 
+        skillsH2.style.fontFamily = 'sans-serif';
         skillsH2.style.color = '#3c415c';
         skillsH2.style.webkitTextStrokeColor = 'transparent';
 
-        skillsP.style.fontFamily = 'sans-serif'; 
-        skillsP.style.color = 'black'; 
+        skillsP.style.fontFamily = 'sans-serif';
+        skillsP.style.color = 'black';
         skillsP.style.webkitTextStrokeColor = 'transparent';
 
-        skillsItemH3All.forEach(function(h3) {
+        skillsItemH3All.forEach(function (h3) {
             h3.style.fontFamily = 'sans-serif';
             h3.style.color = '#3c415c';
             h3.style.webkitTextStrokeColor = 'transparent';
             h3.style.fontSize = '1.5rem';
         });
 
-        skillsItemPAll.forEach(function(p) {
+        skillsItemPAll.forEach(function (p) {
             p.style.fontFamily = 'sans-serif';
             p.style.color = 'black';
             p.style.webkitTextStrokeColor = 'transparent';
@@ -106,54 +106,56 @@ document.getElementById('removeCheckbox').addEventListener('change', function() 
         projetosH3.style.color = '#3c415c';
         projetosH3.style.webkitTextStrokeColor = 'transparent';
 
-        projetosH2.forEach(function(h2) {
+        projetosH2.forEach(function (h2) {
             h2.style.fontFamily = 'sans-serif';
             h2.style.color = '#3c415c';
             h2.style.webkitTextStrokeColor = 'transparent';
         });
 
-        projetosP.forEach(function(p) {
+        projetosP.forEach(function (p) {
             p.style.fontFamily = 'sans-serif';
             p.style.color = 'black';
             p.style.webkitTextStrokeColor = 'transparent';
             p.style.backgroundColor = '#f3f6fb';
         });
 
-        projetosA.forEach(function(a) {
-            a.style.backgroundColor = '#3c415c'; 
+        projetosA.forEach(function (a) {
+            a.style.backgroundColor = '#3c415c';
         });
 
-        footerH3.forEach(function(h3) {
-            h3.style.fontFamily = 'sans-serif'; 
-            h3.style.color = 'black'; 
+        footerH3.forEach(function (h3) {
+            h3.style.fontFamily = 'sans-serif';
+            h3.style.color = 'black';
         });
 
         mainFooter.style.background = 'linear-gradient(to bottom, white, #3c415c)';
-        mainFooterParagraph.forEach(function(mainFooterP) {
+        mainFooterParagraph.forEach(function (mainFooterP) {
             mainFooterP.style.fontFamily = 'sans-serif';
-            mainFooterP.style.color = 'black'; 
+            mainFooterP.style.color = 'black';
             mainFooterP.style.fontSize = '1rem'
         });
 
-        socialIcons.forEach(function(socialIcon) {
-            socialIcon.style.filter = 'brightness(0%)'; 
+        socialIcons.forEach(function (socialIcon) {
+            socialIcon.style.filter = 'brightness(0%)';
         });
 
-        paragraphs.forEach(function(paragraph) {
+        paragraphs.forEach(function (paragraph) {
             paragraph.style.color = 'black';
             paragraph.style.fontSize = '0.8rem';
         });
 
         mainFooterCopy.style.background = '#9394a5';
-        anchorTags.forEach(function(anchorTag) {
+        anchorTags.forEach(function (anchorTag) {
             anchorTag.style.color = 'black';
         });
-      
+
     } else {
 
         backgroundContainer.style.backgroundImage = 'url("../utils/neon-lights-dark-5824x3264-12563.jpg")';
         backgroundContainer.style.background = '';
-        sectionHome.style.backgroundImage = 'url("../../utils/circuit-lines-upscaled\ \(1\).png")';
+        sectionHome.style.backgroundImage = 'url("../../utils/circuitLines.png")';
+        console.log('Checkbox estado:', this.checked);
+        console.log('Caminho da imagem:', sectionHome.style.backgroundImage);
         sectionHome.style.backgroundColor = '';
         h1Element.style.fontFamily = '';
         h1Element.style.color = '';
@@ -169,12 +171,12 @@ document.getElementById('removeCheckbox').addEventListener('change', function() 
         header.style.backgroundColor = '';
         navUl.style.backgroundColor = '';
 
-        navItems.forEach(function(item) {
-            item.style.color = ''; 
-            item.style.fontFamily = ''; 
+        navItems.forEach(function (item) {
+            item.style.color = '';
+            item.style.fontFamily = '';
         });
-        icons.forEach(function(icon) {
-            icon.style.filter = ''; 
+        icons.forEach(function (icon) {
+            icon.style.filter = '';
         });
 
         sobreMimTitle.style.fontFamily = '';
@@ -182,7 +184,7 @@ document.getElementById('removeCheckbox').addEventListener('change', function() 
         sobreMimTitle.style.backgroundColor = '';
         sobreMimTitle.style.border = '';
         sobreMimTitle.style.webkitTextStrokeColor = '';
-        
+
 
         sobreMimContent.style.fontFamily = '';
         sobreMimContent.style.color = '';
@@ -205,14 +207,14 @@ document.getElementById('removeCheckbox').addEventListener('change', function() 
         skillsP.style.color = '';
         skillsP.style.webkitTextStrokeColor = '';
 
-        skillsItemH3All.forEach(function(h3) {
+        skillsItemH3All.forEach(function (h3) {
             h3.style.fontFamily = '';
             h3.style.color = '';
             h3.style.webkitTextStrokeColor = '';
             h3.style.fontSize = '';
         });
 
-        skillsItemPAll.forEach(function(p) {
+        skillsItemPAll.forEach(function (p) {
             p.style.fontFamily = '';
             p.style.color = '';
             p.style.webkitTextStrokeColor = '';
@@ -225,49 +227,49 @@ document.getElementById('removeCheckbox').addEventListener('change', function() 
         projetosH3.style.color = '';
         projetosH3.style.webkitTextStrokeColor = '';
 
-        projetosH2.forEach(function(h2) {
+        projetosH2.forEach(function (h2) {
             h2.style.fontFamily = '';
             h2.style.color = '';
             h2.style.webkitTextStrokeColor = '';
         });
-    
-        projetosP.forEach(function(p) {
+
+        projetosP.forEach(function (p) {
             p.style.fontFamily = '';
             p.style.color = '';
             p.style.webkitTextStrokeColor = '';
             p.style.backgroundColor = '';
         });
 
-        projetosA.forEach(function(a) {
-            a.style.backgroundColor = ''; 
+        projetosA.forEach(function (a) {
+            a.style.backgroundColor = '';
         });
 
-        footerH3.forEach(function(h3) {
+        footerH3.forEach(function (h3) {
             h3.style.fontFamily = '';
             h3.style.color = '';
         });
         mainFooter.style.background = '';
-        mainFooterParagraph.forEach(function(mainFooterP) {
-            mainFooterP.style.fontFamily = ''; 
-            mainFooterP.style.color = ''; 
+        mainFooterParagraph.forEach(function (mainFooterP) {
+            mainFooterP.style.fontFamily = '';
+            mainFooterP.style.color = '';
             mainFooterP.style.fontSize = ''
         });
 
-        
-        socialIcons.forEach(function(socialIcon) {
-            socialIcon.style.filter = ''; 
+
+        socialIcons.forEach(function (socialIcon) {
+            socialIcon.style.filter = '';
         });
 
-        paragraphs.forEach(function(paragraph) {
+        paragraphs.forEach(function (paragraph) {
             paragraph.style.color = '';
             paragraph.style.fontSize = '';
         });
 
         mainFooterCopy.style.background = '';
-        anchorTags.forEach(function(anchorTag) {
+        anchorTags.forEach(function (anchorTag) {
             anchorTag.style.color = '';
         });
-        
-        
+
+
     }
 });

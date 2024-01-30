@@ -160,7 +160,7 @@ document.getElementById('removeCheckbox').addEventListener('change', function ()
             sectionHome.style.backgroundColor = '';
             h1Element.style.fontFamily = '';
             h1Element.style.color = '';
-        }, 100);
+        }, 300);
 
 
         h2Element.style.fontFamily = '';

@@ -158,7 +158,7 @@
                 sectionHome.style.backgroundColor = '';
                 h1Element.style.fontFamily = '';
                 h1Element.style.color = '';
-            }, 1000);
+            }, 100);
 
 
             h2Element.style.fontFamily = '';

@@ -152,9 +152,9 @@
         } else {
 
             setTimeout(function () {
-                backgroundContainer.style.backgroundImage = 'url("../utils/neon-lights-dark-5824x3264-12563.jpg")';
+                backgroundContainer.style.backgroundImage = '';
                 backgroundContainer.style.background = '';
-                sectionHome.style.backgroundImage = 'url("../utils/circuitLines.png")';
+                sectionHome.style.backgroundImage = '';
                 sectionHome.style.backgroundColor = '';
                 h1Element.style.fontFamily = '';
                 h1Element.style.color = '';

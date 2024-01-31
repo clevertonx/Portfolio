@@ -34,6 +34,7 @@
             backgroundContainer.style.backgroundImage = 'none';
             backgroundContainer.style.background = '#e4e5f1';
             sectionHome.style.backgroundImage = 'none';
+            sectionHome.style.backgroundColor = '#f3f6fb';
             h1Element.style.fontFamily = 'sans-serif';
             h1Element.style.color = '#3c415c';
 
@@ -154,9 +155,10 @@
                 backgroundContainer.style.backgroundImage = 'url("../utils/neon-lights-dark-5824x3264-12563.jpg")';
                 backgroundContainer.style.background = '';
                 sectionHome.style.backgroundImage = 'url("../utils/circuitLines.png")';
+                sectionHome.style.backgroundColor = '';
                 h1Element.style.fontFamily = '';
                 h1Element.style.color = '';
-            }, 300);
+            }, 1000);
 
 
             h2Element.style.fontFamily = '';
